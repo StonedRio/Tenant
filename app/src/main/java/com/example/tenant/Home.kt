@@ -43,6 +43,7 @@ class Home : AppCompatActivity() {
 
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
+
                 when (position) {
                     0 -> toggleGroup.check(R.id.btn_post_new_job)
                     1 -> toggleGroup.check(R.id.btn_inprogress)

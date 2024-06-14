@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/outfit_semibold"
-            android:text="Tenant Account"
+            android:text="@string/tenant_account"
             android:textColor="@color/black"
             android:textSize="@dimen/_20ssp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
             android:id="@+id/home_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
+            android:text="@string/home"
             android:fontFamily="@font/outfit_regular"
             android:layout_marginStart="@dimen/_20sdp"
             android:textColor="@color/black"
@@ -50,7 +50,7 @@
                 style="@style/Widget.MaterialButtonToggleGroup.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Post New Job"
+                android:text="@string/post_new_job"
                 app:cornerRadius="4dp" />
 
             <com.google.android.material.button.MaterialButton
@@ -58,14 +58,14 @@
                 style="@style/Widget.MaterialButtonToggleGroup.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="In Progress" />
+                android:text="@string/in_progress" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_completed"
                 style="@style/Widget.MaterialButtonToggleGroup.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Completed"
+                android:text="@string/completed"
                 app:cornerRadius="4dp" />
         </com.google.android.material.button.MaterialButtonToggleGroup>
 

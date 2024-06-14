@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/silver_round_shape"
             android:padding="@dimen/_8sdp"
-            android:text="Show Details"
+            android:text="@string/show_details"
             android:textColor="@color/black"
             android:textSize="@dimen/_10ssp"
             android:layout_marginEnd="@dimen/_20sdp"
