@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tenant.adapters.ViewPagerAdapter
+import com.example.tenant.databinding.ActivityHomeBinding
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.button.MaterialButtonToggleGroup
 
@@ -12,6 +13,8 @@ private lateinit var viewPager: ViewPager2
 private lateinit var toggleGroup: MaterialButtonToggleGroup
 
 class Home : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)

@@ -128,6 +128,85 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/price_tv" />
 
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_time"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/select_datetime"
+                app:layout_constraintTop_toBottomOf="@+id/select_datetime" />
+
+            <TextView
+                android:id="@+id/time_and_slot_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Time and Slots"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginStart="@dimen/_3sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/time_icon"
+                app:layout_constraintStart_toEndOf="@+id/time_icon"
+                app:layout_constraintTop_toTopOf="@+id/time_icon" />
+
+            <TextView
+                android:id="@+id/Date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:text="Select Date"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/time_and_slot_tv" />
+
+            <ImageView
+                android:id="@+id/date_icon"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_date"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:layout_constraintEnd_toStartOf="@+id/Date_tv"
+                app:layout_constraintTop_toBottomOf="@+id/select_datetime" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/silver_round_shape"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/time_and_slot_tv" />
+
+
+            <Button
+                android:id="@+id/agree_btn"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.27"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Agree"
+                android:backgroundTint="@color/silver"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+            <Button
+                android:id="@+id/request_change_btn"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/black"
+                android:text="Request Change"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/agree_btn"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
