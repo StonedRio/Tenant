@@ -56,6 +56,7 @@ class PageSeven : AppCompatActivity() {
         timeAdapter = TimeAdapter(morningStamp)
         recyclerView.adapter = timeAdapter
 
+
         val tabLayout: TabLayout = findViewById(R.id.tab_layout)
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
