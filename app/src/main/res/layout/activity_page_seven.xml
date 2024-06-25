@@ -155,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
                 android:text="Select Date"
-                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:fontFamily="@font/outfit_regular"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -176,35 +176,44 @@
                 android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:tabTextColor="@color/silver"
+                app:tabSelectedTextColor="@color/black"
+                app:tabIndicatorColor="@color/black"
                 android:background="@drawable/silver_round_shape"
                 android:layout_marginTop="@dimen/_5sdp"
                 app:layout_constraintTop_toBottomOf="@+id/time_and_slot_tv" />
 
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
             <Button
                 android:id="@+id/agree_btn"
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.27"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_10sdp"
-                android:text="Agree"
                 android:backgroundTint="@color/silver"
+                android:text="Agree"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
+                app:layout_constraintWidth_percent="0.27" />
 
             <Button
                 android:id="@+id/request_change_btn"
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:backgroundTint="@color/black"
                 android:text="Request Change"
-                android:layout_marginEnd="@dimen/_10sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/agree_btn"
-                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
+                app:layout_constraintWidth_percent="0.4" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
